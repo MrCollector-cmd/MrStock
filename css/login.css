@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: azure;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.conteiner_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(219, 227, 232);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.form_element{
+    margin: 0 10px 30px 10px;
+}
+.email, .password{
+    font-size: 17px;
+    padding: 5px 3px ;
+    border: none;
+    outline: none;
+}
+.email:hover, .password:focus:active{
+    font-size: 17px;
+    padding: 5px 3px ;
+    border: none;
+    outline: none;
+    background: rgba(175, 184, 192, 0.756);
+}
+.titulo{
+    padding: 0 0 5px 0;
+}
+.divition{
+    width: 100%;
+    height: 1px;
+    background: black;
+    margin: 10px 0 20px 0;
+}
+.envio{
+    padding: 5px 0;
+    margin: 13px 10px 0 10px; 
+    border: none;
+    background-color: rgb(175, 184, 192);
+    font-size: 17px;
+
+}
