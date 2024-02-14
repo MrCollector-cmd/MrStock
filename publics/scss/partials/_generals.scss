@@ -1,0 +1,32 @@
+a,input{
+    color: inherit;
+    color: aliceblue !important;
+}
+form{
+    background-color: $color8;
+}
+input,select{
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    height: 2.5rem;
+    background-color: $color6;
+}
+input:focus, input:active{
+    border: none;
+}
+input::placeholder{
+    color: rgba(240, 248, 255, 0.614);
+}
+.btnAct,input[type="submit"]{
+    color: black !important;
+    border: none;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 10px;
+    background-color: $color4;
+}
+.btnAct:active,input[type="submit"]:active{
+    background-color: $color9;
+    color: aliceblue;
+}

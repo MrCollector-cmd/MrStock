@@ -1,0 +1,16 @@
+.elem-left{
+    height: 25rem;
+    background-color: $color9;
+}
+.elem-right{
+    height: 25rem;
+    background-color: $color8;
+}
+@media screen and (max-width:768px) {
+    .elem-left{
+        height: 15rem;
+    }
+    .elem-right{
+        height: 15rem;
+    }
+}
