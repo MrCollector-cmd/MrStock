@@ -3,6 +3,7 @@ import { formUpdate } from "./forms/update.js";
 import { formSetOrder } from "./forms/setOrder.js";
 import { eventForm } from "./forms/eventsForm/events.js";
 import { eventsButtons } from "./forms/eventsForm/eventsButtons.js";
+import { viewInf } from "./forms/view.js";
 
 function drawPos(context) {
     // console.log(context.actPosition)
@@ -24,6 +25,11 @@ function drawPos(context) {
             context.useStyle = true;
             eventsButtons();
             eventForm();
+        break;
+        case 3: 
+            viewInf(context.options[context.actPosition]);
+            context.useStyle = true;
+            eventsButtons();
         break;
     };
 };

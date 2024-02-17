@@ -18,6 +18,7 @@ let mainLoop = {
 
         mainLoop.refresh(regTemp);
         mainLoop.draw();
+        
         if (regTemp - mainLoop.lastReg > 999) {
             mainLoop.lastReg = regTemp;
              console.log('aps: '+ mainLoop.aps +" | "+" fps: "+mainLoop.fps);

@@ -56,19 +56,28 @@ header nav ul li a {
 .elem-left {
   height: 25rem;
   background-color: rgb(66, 60, 80);
+  border-radius: 0 0 0 10px ;
 }
 
 .elem-right {
   height: 25rem;
   background-color: rgb(76, 69, 95);
+  border-radius: 0 10px 10px 0 ;
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    padding: 0 !important;
+  }
   .elem-left {
     height: 15rem;
+    width: 100vw;
+    border-radius: 0px;
   }
   .elem-right {
     height: 15rem;
+    width: 100vw;
+    border-radius: 0 0 10px 10px;
   }
 }
 .pedido {
