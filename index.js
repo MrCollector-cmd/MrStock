@@ -1,6 +1,5 @@
 import { app } from "./src/middelwer/middels.js";
-
-const PORT = process.env.PORT || 3000;
+import { PORT } from "./src/configs/config.js";
 
 function run(port) {
     app.listen(port,()=>{
