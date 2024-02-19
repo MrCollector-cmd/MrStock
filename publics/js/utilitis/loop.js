@@ -7,7 +7,9 @@ const context = {
     options: ['insert','update','setOrder','view'],
     actPosition: 0,
     useStyle:true,
-    pedidos:[]
+    useOneAct:false,
+    pedidos:[],
+    contAct: 0,
 }
 let mainLoop = {
     lastReg: 0,
@@ -19,13 +21,19 @@ let mainLoop = {
         mainLoop.refresh(regTemp);
         mainLoop.draw();
         
+
+        if(context.contAct == 10){
+            context.contAct = 0;
+        }
         if (regTemp - mainLoop.lastReg > 999) {
             mainLoop.lastReg = regTemp;
              console.log('aps: '+ mainLoop.aps +" | "+" fps: "+mainLoop.fps);
             mainLoop.aps = 0;
             mainLoop.fps = 0;
+            context.contAct++;
             drawOrders(context);
         };
+
     },
     stop:function(){
 
@@ -42,9 +50,13 @@ let mainLoop = {
             refreshCartelera(context);
             drawOrders(context);
             context.useStyle = false;
-        }if(mainLoop.fps == 59){
-            refreshCartelera(context);
-            drawOrders(context);
+        }if(context.contAct == 9){
+            context.useOneAct = true;
+            if (context.useOneAct) {
+                refreshCartelera(context);
+                drawOrders(context);
+                context.contAct = false;
+            }
         }
         mainLoop.fps++;
     }
