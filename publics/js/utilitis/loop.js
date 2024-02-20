@@ -50,14 +50,14 @@ let mainLoop = {
             refreshCartelera(context);
             drawOrders(context);
             context.useStyle = false;
-        }if(context.contAct == 9){
+        }if(context.contAct == 2){
             context.useOneAct = true;
             if (context.useOneAct) {
                 refreshCartelera(context);
                 drawOrders(context);
                 context.contAct = false;
-            }
-        }
+            };
+        };
         mainLoop.fps++;
     }
 };

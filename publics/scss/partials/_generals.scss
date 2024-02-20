@@ -5,6 +5,9 @@ a,input{
 form{
     background-color: $color8;
 }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 input,select{
     color: inherit;
     border: none;
@@ -26,7 +29,14 @@ input::placeholder{
     border-radius: 10px;
     background-color: $color4;
 }
-.btnAct:active,input[type="submit"]:active{
+a{
+    border: none;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $color4;
+}
+.btnAct:active,input[type="submit"]:active,a:active{
     background-color: $color9;
     color: aliceblue;
 }

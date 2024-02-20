@@ -7,6 +7,10 @@ form {
   background-color: rgb(76, 69, 95);
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 input, select {
   color: inherit;
   border: none;
@@ -32,7 +36,15 @@ input::placeholder {
   background-color: rgb(184, 178, 199);
 }
 
-.btnAct:active, input[type=submit]:active {
+a {
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(184, 178, 199);
+}
+
+.btnAct:active, input[type=submit]:active, a:active {
   background-color: rgb(66, 60, 80);
   color: aliceblue;
 }
@@ -56,28 +68,19 @@ header nav ul li a {
 .elem-left {
   height: 25rem;
   background-color: rgb(66, 60, 80);
-  border-radius: 0 0 0 10px ;
 }
 
 .elem-right {
   height: 25rem;
   background-color: rgb(76, 69, 95);
-  border-radius: 0 10px 10px 0 ;
 }
 
 @media screen and (max-width: 768px) {
-  body{
-    padding: 0 !important;
-  }
   .elem-left {
     height: 15rem;
-    width: 100vw;
-    border-radius: 0px;
   }
   .elem-right {
     height: 15rem;
-    width: 100vw;
-    border-radius: 0 0 10px 10px;
   }
 }
 .pedido {
@@ -94,6 +97,18 @@ header nav ul li a {
   font-size: 1.2rem;
 }
 
+.btnDownload {
+  color: rgb(66, 60, 80) !important;
+  position: absolute;
+  bottom: 1.5rem;
+  width: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .btnDownload {
+    right: 1rem;
+  }
+}
 .activeAnchor {
   background-color: rgb(66, 60, 80);
   border-radius: 10px 10px 0 0;

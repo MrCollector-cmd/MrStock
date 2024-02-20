@@ -12,3 +12,15 @@
         font-size: 1.2rem;
     }
 }
+.btnDownload{
+    color: $color9 !important;
+
+    position: absolute;
+    bottom: 1.5rem;
+    width: 8rem;
+}
+@media screen and (max-width:768px) {
+    .btnDownload{
+        right: 1rem;
+    }
+}
