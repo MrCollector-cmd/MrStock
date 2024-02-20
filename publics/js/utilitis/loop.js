@@ -31,7 +31,6 @@ let mainLoop = {
             mainLoop.aps = 0;
             mainLoop.fps = 0;
             context.contAct++;
-            drawOrders(context);
         };
 
     },
