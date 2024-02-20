@@ -1,4 +1,5 @@
-import mysql from 'mysql';
+// import mysql from 'mysql';
+import mysql from 'mysql2';
 import { DB_HOST,DB_NAME,DB_PASSWORD,DB_USER,DB_PORT } from '../configs/config.js';
 
 const pool = mysql.createPool({
